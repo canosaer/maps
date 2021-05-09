@@ -135,7 +135,7 @@ table {
 
 /* 
 ==============================================
-CONTENT:	Project Name Here
+CONTENT:	Google Maps Location Search
 AUTHOR:		Eric Canosa
 ==============================================
 
@@ -154,7 +154,7 @@ TABLE OF CONTENTS:
 }
 
 body {
-  font-family: "Lucida Sans", sans-serif, serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -201,9 +201,10 @@ a {
   background: rgba(211, 211, 211, 0.3);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2fr 1fr 0.15fr 0.3fr 0.2fr;
-  grid-template-columns: 0.2fr 1fr 0.15fr 0.3fr 0.2fr;
+  -ms-grid-columns: 0.65fr 1fr 0.15fr 0.3fr 0.2fr;
+  grid-template-columns: 0.65fr 1fr 0.15fr 0.3fr 0.2fr;
   grid-auto-rows: auto;
+  padding: 2rem 0;
 }
 .search-controls__input {
   -ms-grid-row: 2;
@@ -244,100 +245,6 @@ a {
   opacity: 1;
 }
 
-.article-count {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  color: gray;
-  font-size: 0.75rem;
-  padding: 2rem 0rem 0.6rem 0.1rem;
-  min-height: 3.35rem;
-}
-
-.search-menu {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
-  position: relative;
-  -ms-grid-row-align: center;
-      align-self: center;
-  color: gray;
-  font-size: 0.85rem;
-  cursor: pointer;
-  margin-left: auto;
-  padding-right: 6.85%;
-}
-.search-menu__arrow {
-  padding-left: 0.3rem;
-  position: absolute;
-}
-.search-menu__active:hover {
-  color: black;
-}
-.search-menu__sort-list {
-  position: absolute;
-  background: white;
-  border: 1px solid black;
-  padding: 0.25rem 0rem;
-  top: 1.2rem;
-  width: 8.4rem;
-}
-.search-menu__item {
-  padding: 0.5rem 0.5rem;
-  margin: 0.25rem 0rem;
-}
-.search-menu__item:hover {
-  background: steelblue;
-  color: white;
-}
-
-.date-range {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  padding: 1rem 0rem 1.5rem;
-  position: relative;
-  color: gray;
-  cursor: pointer;
-  width: 9rem;
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-.date-range__input {
-  position: absolute;
-  display: -webkit-flex;
-  display: flex;
-  width: 18rem;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  -webkit-align-items: center;
-          align-items: center;
-  top: 0.6rem;
-  left: 6.5rem;
-}
-.date-range__input-field {
-  max-width: 8rem;
-}
-.date-range__symbol {
-  position: absolute;
-  color: gray;
-  font-size: 0.65rem;
-  bottom: 1.6rem;
-  left: 4.8rem;
-}
-.date-range:hover {
-  color: black;
-}
-.date-range:hover .date-range__separator {
-  color: gray;
-}
-
 .results {
   display: -ms-grid;
   display: grid;
@@ -345,6 +252,7 @@ a {
   -ms-grid-columns: 0.2fr 1fr 0.15fr 0.3fr 0.2fr;
   grid-template-columns: 0.2fr 1fr 0.15fr 0.3fr 0.2fr;
   grid-auto-rows: auto;
+  margin-top: 1rem;
 }
 .results__row {
   -ms-grid-column: 2;

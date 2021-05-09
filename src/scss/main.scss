@@ -1,6 +1,6 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
+CONTENT:	Google Maps Location Search
 AUTHOR:		Eric Canosa
 ==============================================
 
@@ -25,7 +25,7 @@ TABLE OF CONTENTS:
 }
 
 body{
-	font-family: 'Lucida Sans', sans-serif, serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -56,8 +56,9 @@ a{
 	grid-column: 1/-1;
 	background: rgba(211,211,211,0.3);
 	display: grid;
-	grid-template-columns: 0.2fr 1fr 0.15fr 0.3fr 0.2fr;
+	grid-template-columns: 0.65fr 1fr 0.15fr 0.3fr 0.2fr;
 	grid-auto-rows: auto;
+	padding: 2rem 0;
 
 	&__input{
 		grid-row: 2/3;
@@ -91,104 +92,13 @@ a{
 	
 }
 
-.article-count{
-	grid-column: 2/3;
-	color: gray;
-	font-size: 0.75rem;
-	padding: 2rem 0rem 0.6rem 0.1rem;
-	min-height: 3.35rem;
-}
-
-.search-menu{
-	grid-row: 2/3;
-	grid-column: 4/5;
-	position: relative;
-	align-self: center;
-	color: gray;
-	font-size: 0.85rem;
-	cursor: pointer;
-	margin-left: auto;
-	padding-right: 6.85%;
-
-	&__arrow{
-		padding-left: 0.3rem;
-		position: absolute;
-	}
-
-	&__active{
-		&:hover{
-			color: black;
-		}
-	}
-
-	&__sort-list{
-		position: absolute;
-		background: white;
-		border: 1px solid black;
-		padding: 0.25rem 0rem;
-		top: 1.2rem;
-		width: 8.4rem;
-	}
-
-	&__item{
-		padding: 0.5rem 0.5rem;
-		margin: 0.25rem 0rem;
-		
-
-		&:hover{
-			background: steelblue;
-			color: white;
-		}
-	}
-}
-
-.date-range{
-	grid-row: 3/4;
-	grid-column: 2/3;
-	padding: 1rem 0rem 1.5rem;
-	position: relative;
-	color: gray;
-	cursor: pointer;
-	width: 9rem;
-	font-size: 0.75rem;
-	font-weight: bold;
-
-	&__input{
-		position: absolute;
-		display: flex;
-		width: 18rem;
-		justify-content: space-between;
-		align-items: center;
-		top: 0.6rem;
-		left: 6.5rem;
-	}
-
-	&__input-field{
-		max-width: 8rem;
-	}
-
-	&__symbol{
-		position: absolute;
-		color: gray;
-		font-size: 0.65rem;
-		bottom: 1.6rem;
-		left: 4.8rem;
-	}
-
-	&:hover{
-		color: black;
-	}
-
-	&:hover &__separator{
-		color: gray;
-	}
-}
 
 .results{
 	display: grid;
 	grid-column: 1/-1;
 	grid-template-columns: 0.2fr 1fr 0.15fr 0.3fr 0.2fr;
 	grid-auto-rows: auto;
+	margin-top: 1rem;
 
 	&__row{
 		grid-column: 2/5;
