@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title> NYT Article Finder </title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script src="https://kit.fontawesome.com/5290a709ed.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="dist/css/main.css" />
+	</head>
+
+	<body>
+		<main class="display-grid">
+			<a class="site-heading" href="https://www.nytimes.com/" target="_blank">The New York Times</a>
+			<h2 class="site-heading__subheading">Article Finder</h2>
+			<section class="search-controls">
+				<p class="article-count"></p>
+				<input class="search-controls__input" id="term" name="term">
+				<img class="search-controls__button" src="src/img/magnifying-glass.svg" alt="search button"></img>
+				<div class="search-menu"><span class="search-menu__active"><span class="search-menu__text">Sort by Relevance</span><i class="fas fa-chevron-down search-menu__arrow"></i></span>
+					<ul class="search-menu__sort-list hidden">
+						<li class="search-menu__item search-menu__item_relevance">Sort by Relevance</li>
+						<li class="search-menu__item search-menu__item_newest">Sort by Newest</li>
+						<li class="search-menu__item search-menu__item_oldest">Sort by Oldest</li>
+					</ul>
+				</div>
+				<div class="date-range"><span class="date-range__clickable">Date Range <span class="date-range__symbol">&gt;&lt;</span></span>
+					<div class="date-range__input hidden">
+						<input class="date-range__input-field date-range__input-field_begin" id="begin-date" name="begin-date" type="date">
+						<p class="date-range__separator">to</p>
+						<input class="date-range__input-field date-range__input-field_end" id="end-date" name="end-date" type="date">
+					</div>
+				</div>
+			</section>
+			<section class="map">
+				<!-- <div class="results__row">
+						<p class="results__date">Oct. 1, 2020</p>
+						<h3 class="results__section">Arts</h3>
+						<h4 class="results__title">Welcome to Smallville</h4>
+						<p class="results__abstract">These days, size does matter. Sam Lubell takes measure of the incredible shrinking house.</p>
+						<p class="results__byline">By Sam Lubell</p>
+						<div class="results__photo"></div>
+				</div> -->
+			</section>
+		</main>
+
+		<script src="dist/js/google-map.js"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yIOa-xcxX3ToUlAQroKIO8tQktzOcKY&callback=gMap.ready&libraries=places&v=weekly"
+			async
+		></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>
