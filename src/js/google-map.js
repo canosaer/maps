@@ -60,6 +60,19 @@ class GoogleMapAPI{
                     map: this.map,
                     title: location.name,
                 })
+
+                // const request = { reference: location.reference }
+
+                // let phone = ``
+                // let hours = []
+                // let website = ``
+
+                // this.service.getDetails(request, function(details, status){
+                //     console.log(details.name)
+                //     if(details.formatted_phone_number) phone = details.formatted_phone_number
+                //     if(details.website) website = details.website
+                //     if(details.opening_hours.weekday_text) hours = details.opening_hours.weekday_text
+                // })
         
                 const infoWindowContent = `
                     <div>
